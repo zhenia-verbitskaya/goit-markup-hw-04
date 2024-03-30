@@ -343,7 +343,7 @@ ul {
   overflow: hidden;
 }
 
-.overlay {
+.cover {
   position: absolute;
   top: 0;
   line-height: 1.5;
@@ -353,15 +353,15 @@ ul {
   height: 100%;
   padding: 40px 32px;
   background-color: #4d5ae5;
-  transform: translatey(100%);
+  transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .portfolio-item:hover .overlay {
-  transform: translatey(0%);
-} */
+.portfolio-item:hover .cover {
+  transform: translateY(0%);
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -435,6 +435,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #31d0aa;
 }
