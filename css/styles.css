@@ -359,9 +359,9 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .overlay {
-  transform: translatey(0);
-}
+/* .portfolio-item:hover .overlay {
+  transform: translatey(0%);
+} */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -373,6 +373,7 @@ ul {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-info {
@@ -402,11 +403,6 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.footer-icons {
-  display: flex;
-  gap: 16px;
-}
-
 .social-text {
   font-weight: 500;
   font-size: 16px;
@@ -416,12 +412,22 @@ ul {
   margin-bottom: 16px;
 }
 
+.footer-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
   transition-property: background-color;
